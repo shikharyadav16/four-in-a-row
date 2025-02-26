@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="start" onclick="startGame()">
+        <h2>Four in a Row:</h2>
+        <p style="color: white;">The classic strategy game where you try to connect four pieces in a row!</p>
+        <h2 style="color: rgb(255, 255, 255);">How to Play:</h2>
+        <ul>
+            <li>🎮 Two players take turns dropping pieces into a 6x7 grid.</li>
+            <li>🔴🟢 The goal is to connect four of your pieces in a row.</li>
+            <li>↘️ You can win horizontally, vertically, or diagonally.</li>
+            <li>🚀 Plan your moves to block your opponent and set up a win.</li>
+            <li>🏆 First player to connect four wins!</li>
+        </ul>
+        <button>Start</button>
+    </div>
+    <div class="game" hidden>
+        <div class="container_btn"></div>
+        <div class="container"></div>
+        <div class="win_sec" hidden>
+            <div class="winner"></div>
+            <button onclick="restart()">Restart</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
